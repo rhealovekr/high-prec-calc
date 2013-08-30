@@ -87,7 +87,7 @@ BOOL ChighprecalcDlg::PreTranslateMessage(MSG* pMsg)
 	{
 		CAboutDlg aboutDlg;
 		aboutDlg.DoModal();
-		return FALSE;
+		return TRUE;
 	}
 	if (this->GetFocus() == GetDlgItem(IDC_EDIT3))
 	{

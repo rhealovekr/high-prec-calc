@@ -93,12 +93,12 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\devtools\mpir-2.6.0\lib\x64\Debug</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\devtools\mpir-2.6.0\lib\Win32\Debug</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>D:\devtools\mpir-2.6.0\lib\x64\Debug\mpir.lib</AdditionalDependencies>
+      <AdditionalDependencies>D:\devtools\mpir-2.6.0\lib\Win32\Debug\mpir.lib</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
