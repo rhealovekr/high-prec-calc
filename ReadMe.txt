@@ -15,10 +15,10 @@ high-pre-calc.vcxproj.filters
 
 high-pre-calc.h
     해당 응용 프로그램의 기본 헤더 파일입니다.
-    여기에는 resource.h를 비롯한 다른 프로젝트별 헤더가 포함되어 있으며 ChighprecalcApp 응용 프로그램 클래스가 선언되어 있습니다.
+    여기에는 resource.h를 비롯한 다른 프로젝트별 헤더가 포함되어 있으며 ChighpreccalcApp 응용 프로그램 클래스가 선언되어 있습니다.
 
 high-pre-calc.cpp
-    이는 응용 프로그램 클래스 ChighprecalcApp가 포함된 기본 응용 프로그램 소스 파일입니다.
+    이는 응용 프로그램 클래스 ChighpreccalcApp가 포함된 기본 응용 프로그램 소스 파일입니다.
 
 high-pre-calc.rc
     프로그램에서 사용하는 모든 Microsoft Windows 리소스의 목록입니다. 여기에는 RES 하위 디렉터리에 저장된 아이콘, 비트맵 및 커서가 포함됩니다. 이 파일은 Microsoft Visual C++에서 직접 편집할 수 있습니다. 프로젝트 리소스는 1042에 있습니다.
@@ -35,7 +35,7 @@ res\highprecalc.rc2
 응용 프로그램 마법사에서 대화 상자 클래스 하나를 만듭니다.
 
 high-pre-calcDlg.h, high-pre-calcDlg.cpp - 대화 상자
-    이 파일에는 ChighprecalcDlg 클래스가 포함됩니다. 이 클래스는 응용 프로그램의 주 대화 상자에 대한 동작을 정의합니다. 이 대화 상자 템플릿은 high-pre-calc.rc에 있으며, Microsoft Visual C++에서 직접 편집할 수 있습니다.
+    이 파일에는 ChighpreccalcDlg 클래스가 포함됩니다. 이 클래스는 응용 프로그램의 주 대화 상자에 대한 동작을 정의합니다. 이 대화 상자 템플릿은 high-pre-calc.rc에 있으며, Microsoft Visual C++에서 직접 편집할 수 있습니다.
 
 /////////////////////////////////////////////////////////////////////////////
 

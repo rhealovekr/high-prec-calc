@@ -1,19 +1,19 @@
 
-// high-pre-calcDlg.h : 헤더 파일
+// high-prec-calcDlg.h : 헤더 파일
 //
 
 #pragma once
 
 
-// ChighprecalcDlg 대화 상자
-class ChighprecalcDlg : public CDialogEx
+// ChighpreccalcDlg 대화 상자
+class ChighpreccalcDlg : public CDialogEx
 {
 // 생성입니다.
 public:
-	ChighprecalcDlg(CWnd* pParent = NULL);	// 표준 생성자입니다.
+	ChighpreccalcDlg(CWnd* pParent = NULL);	// 표준 생성자입니다.
 
 // 대화 상자 데이터입니다.
-	enum { IDD = IDD_HIGHPRECALC_DIALOG };
+	enum { IDD = IDD_HIGHPRECCALC_DIALOG };
 
 	protected:
 	virtual void DoDataExchange(CDataExchange* pDX);	// DDX/DDV 지원입니다.

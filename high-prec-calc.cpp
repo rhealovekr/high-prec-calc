@@ -1,26 +1,26 @@
 
-// high-pre-calc.cpp : 응용 프로그램에 대한 클래스 동작을 정의합니다.
+// high-prec-calc.cpp : 응용 프로그램에 대한 클래스 동작을 정의합니다.
 //
 
 #include "stdafx.h"
-#include "high-pre-calc.h"
-#include "high-pre-calcDlg.h"
+#include "high-prec-calc.h"
+#include "high-prec-calcDlg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
 
 
-// ChighprecalcApp
+// ChighpreccalcApp
 
-BEGIN_MESSAGE_MAP(ChighprecalcApp, CWinApp)
+BEGIN_MESSAGE_MAP(ChighpreccalcApp, CWinApp)
 	//ON_COMMAND(ID_HELP, &CWinApp::OnHelp)
 END_MESSAGE_MAP()
 
 
-// ChighprecalcApp 생성
+// ChighpreccalcApp 생성
 
-ChighprecalcApp::ChighprecalcApp()
+ChighpreccalcApp::ChighpreccalcApp()
 {
 	// 다시 시작 관리자 지원
 	m_dwRestartManagerSupportFlags = AFX_RESTART_MANAGER_SUPPORT_RESTART;
@@ -30,14 +30,14 @@ ChighprecalcApp::ChighprecalcApp()
 }
 
 
-// 유일한 ChighprecalcApp 개체입니다.
+// 유일한 ChighpreccalcApp 개체입니다.
 
-ChighprecalcApp theApp;
+ChighpreccalcApp theApp;
 
 
-// ChighprecalcApp 초기화
+// ChighpreccalcApp 초기화
 
-BOOL ChighprecalcApp::InitInstance()
+BOOL ChighpreccalcApp::InitInstance()
 {
 	// 응용 프로그램 매니페스트가 ComCtl32.dll 버전 6 이상을 사용하여 비주얼 스타일을
 	// 사용하도록 지정하는 경우, Windows XP 상에서 반드시 InitCommonControlsEx()가 필요합니다.
@@ -68,7 +68,7 @@ BOOL ChighprecalcApp::InitInstance()
 	// 적절한 내용으로 수정해야 합니다.
 	SetRegistryKey(_T("로컬 응용 프로그램 마법사에서 생성된 응용 프로그램"));
 
-	ChighprecalcDlg dlg;
+	ChighpreccalcDlg dlg;
 	m_pMainWnd = &dlg;
 	INT_PTR nResponse = dlg.DoModal();
 	if (nResponse == IDOK)

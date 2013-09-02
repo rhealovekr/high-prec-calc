@@ -1,10 +1,10 @@
 
-// high-pre-calcDlg.cpp : 구현 파일
+// high-prec-calcDlg.cpp : 구현 파일
 //
 
 #include "stdafx.h"
-#include "high-pre-calc.h"
-#include "high-pre-calcDlg.h"
+#include "high-prec-calc.h"
+#include "high-prec-calcDlg.h"
 #include "afxdialogex.h"
 #include "mpirxx.h"
 
@@ -44,40 +44,40 @@ BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
 END_MESSAGE_MAP()
 
 
-// ChighprecalcDlg 대화 상자
+// ChighpreccalcDlg 대화 상자
 
 
 
-ChighprecalcDlg::ChighprecalcDlg(CWnd* pParent /*=NULL*/)
-	: CDialogEx(ChighprecalcDlg::IDD, pParent)
+ChighpreccalcDlg::ChighpreccalcDlg(CWnd* pParent /*=NULL*/)
+	: CDialogEx(ChighpreccalcDlg::IDD, pParent)
 	, m_nRadioSelected(0)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
 
-void ChighprecalcDlg::DoDataExchange(CDataExchange* pDX)
+void ChighpreccalcDlg::DoDataExchange(CDataExchange* pDX)
 {
 	DDX_Radio(pDX, IDC_RADIO1, m_nRadioSelected);
 
 	CDialogEx::DoDataExchange(pDX);
 }
 
-BEGIN_MESSAGE_MAP(ChighprecalcDlg, CDialogEx)
+BEGIN_MESSAGE_MAP(ChighpreccalcDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
-	ON_BN_CLICKED(IDC_RADIO1, &ChighprecalcDlg::OnRadioButtonClicked)
-	ON_BN_CLICKED(IDC_RADIO2, &ChighprecalcDlg::OnRadioButtonClicked)
-	ON_BN_CLICKED(IDC_RADIO3, &ChighprecalcDlg::OnRadioButtonClicked)
-	ON_BN_CLICKED(IDC_RADIO4, &ChighprecalcDlg::OnRadioButtonClicked)
-	ON_EN_CHANGE(IDC_EDIT1, &ChighprecalcDlg::OnEnChangeEdit1)
-	ON_EN_CHANGE(IDC_EDIT2, &ChighprecalcDlg::OnEnChangeEdit2)
-	ON_BN_CLICKED(IDC_BUTTON1, &ChighprecalcDlg::OnBnClickedButton1)
+	ON_BN_CLICKED(IDC_RADIO1, &ChighpreccalcDlg::OnRadioButtonClicked)
+	ON_BN_CLICKED(IDC_RADIO2, &ChighpreccalcDlg::OnRadioButtonClicked)
+	ON_BN_CLICKED(IDC_RADIO3, &ChighpreccalcDlg::OnRadioButtonClicked)
+	ON_BN_CLICKED(IDC_RADIO4, &ChighpreccalcDlg::OnRadioButtonClicked)
+	ON_EN_CHANGE(IDC_EDIT1, &ChighpreccalcDlg::OnEnChangeEdit1)
+	ON_EN_CHANGE(IDC_EDIT2, &ChighpreccalcDlg::OnEnChangeEdit2)
+	ON_BN_CLICKED(IDC_BUTTON1, &ChighpreccalcDlg::OnBnClickedButton1)
 END_MESSAGE_MAP()
 
 
-// ChighprecalcDlg 메시지 처리기
-BOOL ChighprecalcDlg::PreTranslateMessage(MSG* pMsg)
+// ChighpreccalcDlg 메시지 처리기
+BOOL ChighpreccalcDlg::PreTranslateMessage(MSG* pMsg)
 {
 	if (pMsg->wParam == VK_RETURN)
 	{
@@ -117,7 +117,7 @@ BOOL ChighprecalcDlg::PreTranslateMessage(MSG* pMsg)
 	return CDialogEx::PreTranslateMessage(pMsg);
 }
 
-BOOL ChighprecalcDlg::OnInitDialog()
+BOOL ChighpreccalcDlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
 
@@ -154,7 +154,7 @@ BOOL ChighprecalcDlg::OnInitDialog()
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
 
-void ChighprecalcDlg::OnSysCommand(UINT nID, LPARAM lParam)
+void ChighpreccalcDlg::OnSysCommand(UINT nID, LPARAM lParam)
 {
 	if ((nID & 0xFFF0) == IDM_ABOUTBOX)
 	{
@@ -171,7 +171,7 @@ void ChighprecalcDlg::OnSysCommand(UINT nID, LPARAM lParam)
 //  아래 코드가 필요합니다. 문서/뷰 모델을 사용하는 MFC 응용 프로그램의 경우에는
 //  프레임워크에서 이 작업을 자동으로 수행합니다.
 
-void ChighprecalcDlg::OnPaint()
+void ChighpreccalcDlg::OnPaint()
 {
 	if (IsIconic())
 	{
@@ -198,12 +198,12 @@ void ChighprecalcDlg::OnPaint()
 
 // 사용자가 최소화된 창을 끄는 동안에 커서가 표시되도록 시스템에서
 //  이 함수를 호출합니다.
-HCURSOR ChighprecalcDlg::OnQueryDragIcon()
+HCURSOR ChighpreccalcDlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
-void ChighprecalcDlg::OnRadioButtonClicked()
+void ChighpreccalcDlg::OnRadioButtonClicked()
 {
 	if (IsDlgButtonChecked(IDC_RADIO4))
 	{
@@ -217,7 +217,7 @@ void ChighprecalcDlg::OnRadioButtonClicked()
 	UpdateExp();
 }
 
-void ChighprecalcDlg::UpdateExp()
+void ChighpreccalcDlg::UpdateExp()
 {
 	CString input_a;
 	CString input_b;
@@ -307,14 +307,14 @@ void ChighprecalcDlg::UpdateExp()
 	GetDlgItem(IDC_EDIT4)->SetWindowText(expression);
 }
 
-BOOL ChighprecalcDlg::ValidateDot(CString number)
+BOOL ChighpreccalcDlg::ValidateDot(CString number)
 {
 	int n = number.Remove(_T('.'));
 	
 	return n <= 1;
 }
 
-BOOL ChighprecalcDlg::ValidateNumber(CString number)
+BOOL ChighpreccalcDlg::ValidateNumber(CString number)
 {
 	if (number.GetLength() == 0)
 		return TRUE;
@@ -335,25 +335,27 @@ BOOL ChighprecalcDlg::ValidateNumber(CString number)
 	}
 
 	//
-	if (number.GetLength() > 1 && number.GetAt(0) == _T('0') && number.GetAt(1) != _T('.'))
+	if (number.GetLength() > 1 && number.GetAt(0) == _T('0') && number.GetAt(1) != _T('.') ||
+		number.GetAt(number.GetLength() - 1) == _T('-') ||
+		number.GetAt(number.GetLength() - 1) == _T('+'))
 		return FALSE;
 
 	return TRUE;
 }
 
-void ChighprecalcDlg::OnEnChangeEdit1()
+void ChighpreccalcDlg::OnEnChangeEdit1()
 {
 	UpdateExp();
 }
 
 
-void ChighprecalcDlg::OnEnChangeEdit2()
+void ChighpreccalcDlg::OnEnChangeEdit2()
 {
 	UpdateExp();
 }
 
 
-void ChighprecalcDlg::OnBnClickedButton1()
+void ChighpreccalcDlg::OnBnClickedButton1()
 {
 	CString str;
 	GetDlgItem(IDC_EDIT4)->GetWindowText(str);
@@ -419,15 +421,31 @@ void ChighprecalcDlg::OnBnClickedButton1()
 			c = a / b;
 
 			CString str(c.get_str(ex, 10).c_str());
+
+			// exponent
 			if (str.GetAt(0) == _T('-'))
 				ex+=1;
 
 			if (str.GetLength() != ex)
 			{
 				if (ex > 0)
-					str.Insert(ex, _T('.'));
+				{
+					if (ex > str.GetLength())
+					{
+						// x000...0
+						for (int i = 1; i < ex; ++i)
+						{
+							str.Insert(str.GetLength(), _T('0'));
+						}
+					}
+					else
+					{
+						str.Insert(ex, _T('.'));
+					}
+				}
 				else
 				{
+					// 0.000...x
 					for (int i = ex; i <= 0; ++i)
 					{
 						str.Insert(0, _T('0'));

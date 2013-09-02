@@ -196,15 +196,15 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="high-pre-calc.h" />
-    <ClInclude Include="high-pre-calcDlg.h" />
+    <ClInclude Include="high-prec-calc.h" />
+    <ClInclude Include="high-prec-calcDlg.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="high-pre-calc.cpp" />
-    <ClCompile Include="high-pre-calcDlg.cpp" />
+    <ClCompile Include="high-prec-calc.cpp" />
+    <ClCompile Include="high-prec-calcDlg.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -213,20 +213,20 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="high-pre-calc.rc" />
+    <ResourceCompile Include="high-prec-calc.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\highprecalc.rc2" />
+    <Image Include="res\high-prec-calc.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\high-pre-calc.ico" />
+    <None Include="res\highpreccalc.rc2" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties RESOURCE_FILE="high-pre-calc.rc" />
+      <UserProperties RESOURCE_FILE="high-prec-calc.rc" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

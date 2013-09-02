@@ -1,5 +1,5 @@
 
-// high-pre-calc.h : PROJECT_NAME 응용 프로그램에 대한 주 헤더 파일입니다.
+// high-prec-calc.h : PROJECT_NAME 응용 프로그램에 대한 주 헤더 파일입니다.
 //
 
 #pragma once
@@ -11,14 +11,14 @@
 #include "resource.h"		// 주 기호입니다.
 
 
-// ChighprecalcApp:
-// 이 클래스의 구현에 대해서는 high-pre-calc.cpp을 참조하십시오.
+// ChighpreccalcApp:
+// 이 클래스의 구현에 대해서는 high-prec-calc.cpp을 참조하십시오.
 //
 
-class ChighprecalcApp : public CWinApp
+class ChighpreccalcApp : public CWinApp
 {
 public:
-	ChighprecalcApp();
+	ChighpreccalcApp();
 
 // 재정의입니다.
 public:
@@ -29,4 +29,4 @@ public:
 	DECLARE_MESSAGE_MAP()
 };
 
-extern ChighprecalcApp theApp;
+extern ChighpreccalcApp theApp;
