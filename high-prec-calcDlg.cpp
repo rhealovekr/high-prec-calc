@@ -7,6 +7,7 @@
 #include "high-prec-calcDlg.h"
 #include "afxdialogex.h"
 #include "mpirxx.h"
+#include "mmsystem.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -327,11 +328,22 @@ BOOL ChighpreccalcDlg::ValidateNumber(CString number)
 		temp.Find(_T("&")) >= 0)
 		return FALSE;
 	
+#if 0
 	CComVariant v = temp;
 	if (v.ChangeType(VT_R8) != S_OK)
 	{
 		// string is not number
 		return FALSE;
+	}
+#endif
+	for (int i = 0; i < number.GetLength(); ++i)
+	{
+		if (number.GetAt(i) < 48 ||
+			number.GetAt(i) > 57)
+		{
+			if (number.GetAt(i) != _T('.'))
+				return FALSE;
+		}
 	}
 
 	//
@@ -371,6 +383,8 @@ void ChighpreccalcDlg::OnBnClickedButton1()
 	CString input_b;
 	GetDlgItem(IDC_EDIT1)->GetWindowText(input_a);
 	GetDlgItem(IDC_EDIT2)->GetWindowText(input_b);
+
+	DWORD startTime = timeGetTime();
 
 	switch (m_nRadioSelected)
 	{
@@ -459,4 +473,10 @@ void ChighpreccalcDlg::OnBnClickedButton1()
 	default:
 		break;
 	}
+
+	DWORD endTime = timeGetTime();
+
+	CString timeResult;
+	timeResult.Format(_T("%.3lf sec"), (endTime - startTime) / 1000.0);
+	GetDlgItem(IDC_STATIC_STATUS)->SetWindowText(timeResult);
 }
