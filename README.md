@@ -8,4 +8,4 @@ Addition, Subtraction, Multiplication, Division with unlimited precision.
 
 #### Screenshots
 
-![Alt text](http://119.207.204.235/img/high-1.png "Optional title")
+![Alt text](http://hyacinth.byus.net/moniwiki/wiki.php/high-prec-calc?action=download&value=high-1.png "Optional title")
